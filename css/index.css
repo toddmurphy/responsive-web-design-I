@@ -286,6 +286,18 @@ footer {
   margin-top: 5%;
 }
 
+/* MEDIA QUERIES STYLES */
+/* MEDIA QUERY - 800px remove image for tablet */
+@media (max-width: 800px) {
+  .hero-flex img:first-child {
+    display: none;
+  }
+}
+
+/* MEDIA QUERY - 500px */
+@media (max-width: 500px) {
+}
+
 /*SERVICES CSS STYLES HERE*/
 /* Services - hero main image styles */
 .services-hero-image img {
