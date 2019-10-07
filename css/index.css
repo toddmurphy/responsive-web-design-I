@@ -392,6 +392,32 @@ footer {
   padding-bottom: 10%;
 }
 
+/* Services mobile styles */
+.secondary-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2% 0;
+  padding: 2% 0;
+  letter-spacing: 2;
+  border-bottom: 1px solid black;
+}
+
+.secondary-info .product-one {
+  width: 90%;
+  line-height: 1.5;
+}
+
+.secondary-info .product-two {
+  width: 90%;
+  line-height: 1.5;
+}
+
+.secondary-info .product-three {
+  width: 90%;
+  line-height: 1.5;
+}
+
 /*SERVICES CSS STYLES HERE*/
 /* Services - hero main image styles */
 .services-hero-image img {
