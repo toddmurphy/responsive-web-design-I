@@ -292,7 +292,7 @@ footer {
   /* Navigation links at top */
   .navigation {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -300,10 +300,11 @@ footer {
   }
 
   .navigation .links {
-    width: 90%;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 2%;
+    margin: 4%;
   }
 
   .hero-flex img:first-child {
@@ -335,6 +336,10 @@ footer {
     height: 40px;
     border-radius: 5px;
     font-size: 16px;
+  }
+
+  .logo {
+    padding-top: 2%;
   }
 }
 
