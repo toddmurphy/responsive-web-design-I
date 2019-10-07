@@ -170,6 +170,7 @@ header {
 .navigation {
   display: flex;
   justify-content: space-between;
+  padding-top: 2%;
 }
 
 .navigation .links {
@@ -195,6 +196,8 @@ nav a {
 
 /*HERO MAIN STYLES*/
 .hero-content {
+  padding: 2% 0;
+  border-bottom: 1px solid black;
   background: 1px solid red;
 }
 .title-main {
@@ -228,36 +231,35 @@ nav a {
 .info {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 5% 5%;
 }
 
 .left-info {
-  width: 40%;
+  width: 45%;
 }
 
 .right-info {
-  width: 40%;
+  width: 45%;
 }
 
 /*HERO IMAGE STYLES*/
-
 .image-wrapper {
   width: 100%;
 }
 
 .hero-image {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 2%;
 }
 
 /*SECONDARY INFO CONTENTS STYLES*/
 .secondary-info {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 2% 0;
+  padding: 2% 0;
   letter-spacing: 2;
-  border-top: black;
+  border-bottom: 1px solid black;
 }
 
 .product-one {
@@ -274,14 +276,14 @@ nav a {
 
 /*FOOTER STYLES*/
 footer {
-  line-height: 25px;
-  margin: 50px;
+  line-height: 1.5;
+  margin: 5% 0;
 }
 
 .copyright {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 5%;
 }
 
 /*SERVICES CSS STYLES HERE*/
