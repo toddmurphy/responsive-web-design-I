@@ -346,6 +346,14 @@ footer {
 /* MEDIA QUERY - 500px */
 @media (max-width: 500px) {
   /* Navigation styles */
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  header {
+    width: 100%;
+  }
   .navigation {
     display: flex;
     flex-direction: column-reverse;
@@ -385,18 +393,19 @@ footer {
 }
 
 .info .left-info {
-  width: 100%;
+  width: 94%;
   padding-bottom: 10%;
   line-height: 1.2;
 }
 
 .info .right-info {
-  width: 100%;
+  width: 94%;
   padding-bottom: 10%;
   line-height: 1.2;
 }
 
 /* Services mobile styles */
+
 .secondary-info {
   display: flex;
   flex-direction: column;
@@ -409,22 +418,29 @@ footer {
 
 .secondary-info .product-one {
   width: 90%;
+  margin-left: 5%;
   padding-bottom: 10%;
   line-height: 1.5;
 }
 
 .secondary-info .product-two {
   width: 90%;
+  margin-left: 5%;
   padding-bottom: 10%;
   line-height: 1.5;
 }
 
 .secondary-info .product-three {
   width: 90%;
+  margin-left: 5%;
   padding-bottom: 10%;
   line-height: 1.5;
 }
 
+footer {
+  line-height: 1.5;
+  margin: 5% 5%;
+}
 /*SERVICES CSS STYLES HERE*/
 /* Services - hero main image styles */
 .services-hero-image img {
