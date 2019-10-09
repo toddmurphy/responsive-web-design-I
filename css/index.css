@@ -1,3 +1,562 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*MAIN CONTAINER STYLES*/
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/*HEADER STYLES*/
+header nav {
+  display: flex;
+}
+
+header {
+  width: 90%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+}
+
+.navigation .links {
+  width: 70%;
+  padding-top: 2%;
+}
+
+.navigation .imgContainer {
+  width: 20%;
+}
+
+nav a {
+  padding: 0 2%;
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+}
+
+.imgContainer {
+  display: flex;
+  width: 30%;
+}
+
+/*HERO MAIN STYLES*/
+.hero-content {
+  padding: 2% 0;
+  border-bottom: 1px solid black;
+  background: 1px solid red;
+}
+.title-main {
+  font-size: 48px;
+  text-align: center;
+  width: 20%;
+  margin: auto;
+}
+
+.title-main h1 {
+  display: flex;
+}
+
+.hero-flex {
+  display: flex;
+  padding: 5% 0;
+}
+
+.button {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/*MAIN INFO CONTENT STYLES*/
+/* .main-info p {
+	display: inline-block;
+	width: 40%;
+  } */
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 5%;
+}
+
+.left-info {
+  width: 45%;
+}
+
+.right-info {
+  width: 45%;
+}
+
+/*HERO IMAGE STYLES*/
+.image-wrapper {
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+/*SECONDARY INFO CONTENTS STYLES*/
+.secondary-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+  padding: 2% 0;
+  letter-spacing: 2;
+  border-bottom: 1px solid black;
+}
+
+.product-one {
+  width: 30%;
+}
+
+.product-two {
+  width: 30%;
+}
+
+.product-three {
+  width: 30%;
+}
+
+/*FOOTER STYLES*/
+footer {
+  line-height: 1.5;
+  margin: 5% 0;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+/* MEDIA QUERIES STYLES */
+/* MEDIA QUERY - 800px remove image for tablet */
+@media (max-width: 800px) {
+  /* Navigation links at top */
+  .navigation {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+  }
+
+  .navigation .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    margin: 4%;
+  }
+
+  .hero-flex img:first-child {
+    display: none;
+  }
+  .hero-content {
+    padding: 2% 0;
+    border-bottom: 1px solid black;
+    background: 1px solid red;
+  }
+  .title-main {
+    width: 50%;
+    margin: auto;
+  }
+
+  .title-main h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+  }
+
+  .hero-flex {
+    display: flex;
+    padding: 5% 0;
+  }
+
+  .button {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .logo {
+    padding-top: 2%;
+  }
+}
+
+/* MEDIA QUERY - 500px */
+@media (max-width: 500px) {
+  /* Navigation styles */
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  header {
+    width: 100%;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+  }
+
+  .navigation .links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    margin: 4%;
+  }
+
+  .navigation .links a {
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+}
+/* Features styles */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5% 5%;
+  width: 100%;
+}
+
+.info .left-info {
+  width: 94%;
+  padding-bottom: 10%;
+  line-height: 1.2;
+}
+
+.info .right-info {
+  width: 94%;
+  padding-bottom: 10%;
+  line-height: 1.2;
+}
+
+/* Services mobile styles */
+
+.secondary-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2% 0;
+  padding: 2% 0;
+  letter-spacing: 2;
+  border-bottom: 1px solid black;
+}
+
+.secondary-info .product-one {
+  width: 90%;
+  margin-left: 5%;
+  padding-bottom: 10%;
+  line-height: 1.5;
+}
+
+.secondary-info .product-two {
+  width: 90%;
+  margin-left: 5%;
+  padding-bottom: 10%;
+  line-height: 1.5;
+}
+
+.secondary-info .product-three {
+  width: 90%;
+  margin-left: 5%;
+  padding-bottom: 10%;
+  line-height: 1.5;
+}
+
+footer {
+  line-height: 1.5;
+  margin: 5% 5%;
+}
+/*SERVICES CSS STYLES HERE*/
+/* Services - hero main image styles */
+.services-hero-image img {
+  width: 1100px;
+  padding-bottom: 30px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+hr {
+  margin: 30px 0px;
+}
+
+/* Services - Overview content */
+.services-overview {
+  line-height: 1.5;
+}
+
+/* Services -product css styles */
+/* .product {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-one {
+  width: 40%;
+  border: 1px solid black;
+  background-color: rgb(244, 244, 244);
+  padding: 30px 30px;
+  margin: 20px;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+
+.product-two {
+  width: 40%;
+  border: 1px solid black;
+  background-color: rgb(244, 244, 244);
+  padding: 30px 30px;
+  margin: 20px;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+
+.product-three {
+  width: 40%;
+  border: 1px solid black;
+  background-color: rgb(244, 244, 244);
+  padding: 30px 30px;
+  margin: 20px;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+
+.product-four {
+  width: 40%;
+  border: 1px solid black;
+  background-color: rgb(244, 244, 244);
+  padding: 30px 30px;
+  margin: 20px;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+
+.product-five {
+  width: 40%;
+  border: 1px solid black;
+  background-color: rgb(244, 244, 244);
+  padding: 30px 30px;
+  margin: 20px;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+
+.product-six {
+  width: 40%;
+  border: 1px solid black;
+  background-color: rgb(244, 244, 244);
+  padding: 30px 30px;
+  margin: 20px;
+  border-radius: 5px;
+  line-height: 1.5;
+} */
+
+.services-button {
+  width: 125px;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+
+/* Services - footer styles */
+.services-footer {
+  display: flex;
+}
+
+.services-footer-content {
+  width: 40%;
+  margin-right: 150px;
+}
+
+.footer-bullets {
+  list-style-type: circle;
+  margin-top: 20px;
+}
+
+.footer-bullets p {
+  margin-bottom: 20px;
+}
+
+.services-copyright {
+  text-align: center;
+  margin-top: 100px;
+}
